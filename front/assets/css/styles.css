@@ -1,0 +1,105 @@
+/*
+  @Brice BOKATOLA
+ */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e9ecef;
+}
+
+#chat-container {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    overflow-y: auto; /* Changer scroll en auto pour ne pas toujours afficher la barre de défilement */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajouter une ombre pour un effet de profondeur */
+}
+
+#messages {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.bubble {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 5px 0;
+    display: inline-block;
+    word-wrap: break-word; /* Assure que les longs mots ou URLs sont bien enveloppés */
+}
+
+.bubble.sent {
+    background-color: #d1e7dd;
+    align-self: flex-end;
+    border: 1px solid #c3e6cb;
+}
+
+.bubble.received {
+    background-color: #f8d7da;
+    align-self: flex-start;
+    border: 1px solid #f5c6cb;
+}
+
+.bubble.system {
+    background-color: #e2e3e5;
+    color: #383d41;
+    align-self: center;
+    font-style: italic;
+    border: 1px solid #cbaacc;
+}
+
+#chat-form {
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    margin-top: 10px;
+    align-items: center; /* Assurer l'alignement des éléments du formulaire */
+}
+
+#message-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px; /* Ajoute un espacement entre l'input et le bouton */
+}
+
+button {
+    padding: 10px;
+    border: 1px solid #bcc908;
+    background-color: #bcc908;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #bcc908;
+}
+
+.reactions {
+    margin-top: 5px;
+}
+
+.reactions button {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.reactions button:hover {
+    transform: scale(1.2);
+}

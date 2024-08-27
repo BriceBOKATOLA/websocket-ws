@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat avec ws</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <h1>Chat avec ws</h1>
+    <div id="username-container">
+        <input type="text" id="username-input" placeholder="Entrez votre nom d'utilisateur" required>
+        <button id="set-username">Entrez le nom d'utilisateur</button>
+    </div>
+    <div id="chat-container" style="display: none;">
+        <div id="messages"></div>
+    </div>
+    
+    <form id="chat-form" style="display: none;">
+        <input type="text" id="message-input" placeholder="Tapez votre message..." required>
+        <button type="submit">Envoyer</button>
+    </form>
+
+    <!-- script js  -->
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
